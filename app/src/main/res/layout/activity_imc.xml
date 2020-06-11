@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ImcActivity">
+
+    <!-- Titulo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_imc"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="25dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <!-- peso -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_weight"
+        android:textColor="#000"
+
+        />
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_bg"
+        />
+
+    <!-- altura -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_height"
+        android:textColor="#000"
+        />
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="12dp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edit_bg"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/label_calculate"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- clear -->
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_marginStart="4dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/label_clear"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_result"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        tools:text="000"
+        />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        tools:text="teste"
+        />
+
+
+
+</LinearLayout>

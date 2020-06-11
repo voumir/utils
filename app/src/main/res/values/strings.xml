@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Utils</string>
+    <string name="title_crono">Cronometro</string>
+    <string name="resetar">Resetar</string>
+    <string name="title_imc">Calculadora IMC</string>
+    <string name="label_height">Sua altura em Cm</string>
+    <string name="label_weight">Seu peso em Kg</string>
+    <string name="label_calculate">Calcular</string>
+    <string name="label_result">Resultado</string>
+    <string name="label_clear">" X "</string>
+    <string name="title_utils">Utils</string>
+    <string name="title_volmir">volmir.com.br</string>
+</resources>
