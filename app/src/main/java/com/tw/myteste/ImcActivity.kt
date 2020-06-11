@@ -15,10 +15,10 @@ class ImcActivity : AppCompatActivity() {
             val calculator: Calculator =
                 Calculator(height.text.toString(), weight.text.toString())
 
-            calculator.calc()
+            calculator.calc() // TODO refazer como init
 
-            result.text = calculator.resultado
-            resultText.text = calculator.resultadoText
+            result.text = calculator.imcValue
+            resultText.text = calculator.imcValueText
 
         }
 

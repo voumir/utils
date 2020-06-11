@@ -3,35 +3,33 @@ package com.tw.myteste
 import androidx.annotation.Nullable
 
 /*
-
 Baseado no site: https://www.calculator.net/bmi-calculator.html
-
- */
+*/
 
 class Calculator(@Nullable private val height: String, @Nullable private val weight: String) {
 
-    var resultado = ""
-    var resultadoText = ""
+    var imcValue = ""
+    var imcValueText = ""
 
     fun calc() {
 
         if (height.isNotEmpty() and weight.isNotEmpty()) {
 
-            val h = height.toFloat() / 100
-            val w = weight.toFloat()
+            val heightFloated = height.toFloat() / 100
+            val weightFloated = weight.toFloat()
 
-            val res = w / (h * h)
+            val resultCalc = weightFloated / (heightFloated * heightFloated)
 
-            resultadoText = categoria(res)
+            imcValueText = categoria(resultCalc)
 
-            resultado = "%.2f".format(res) // + " $texto"
+            imcValue = "%.2f".format(resultCalc)
 
         }else{
             println("Sem valores!!!")
         }
     }
 
-    //    Categoria	Faixa de IMC - kg / m 2
+    // Categoria  Faixa de IMC - kg / m 2
     fun categoria(res: Float) = when {
         res < 16 -> "Magreza Grave"
         res > 16 && res < 17 -> "Magreza moderada"

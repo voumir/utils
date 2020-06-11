@@ -6,7 +6,7 @@ import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-
+// TODO Renomear para ChronomeActivity
 class MainActivity : AppCompatActivity() {
 
     private var pauseOffSet: Long = 0
@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         toggleButton.text = null
         toggleButton.textOff = null
         toggleButton.textOn = null
-
-        // chronometer.base = SystemClock.currentThreadTimeMillis()
 
         toggleButton!!.setOnCheckedChangeListener { _, b ->
 
@@ -44,7 +42,6 @@ class MainActivity : AppCompatActivity() {
                     pauseOffSet = 0 // 0
                     chronometer.start()
                     isPlaying = true
-                    //now everything should work let's run our app and see it
                 }
 
         }
