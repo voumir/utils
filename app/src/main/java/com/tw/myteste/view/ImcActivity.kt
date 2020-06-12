@@ -1,7 +1,9 @@
-package com.tw.myteste
+package com.tw.myteste.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tw.myteste.model.Calculator
+import com.tw.myteste.R
 import kotlinx.android.synthetic.main.activity_imc.*
 
 class ImcActivity : AppCompatActivity() {
@@ -13,7 +15,10 @@ class ImcActivity : AppCompatActivity() {
         btn.setOnClickListener {
 
             val calculator: Calculator =
-                Calculator(height.text.toString(), weight.text.toString())
+                Calculator(
+                    height.text.toString(),
+                    weight.text.toString()
+                )
 
             calculator.calc() // TODO refazer como init
 

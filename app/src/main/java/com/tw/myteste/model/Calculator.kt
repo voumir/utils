@@ -1,4 +1,4 @@
-package com.tw.myteste
+package com.tw.myteste.model
 
 import androidx.annotation.Nullable
 
@@ -30,7 +30,7 @@ class Calculator(@Nullable private val height: String, @Nullable private val wei
     }
 
     // Categoria  Faixa de IMC - kg / m 2
-    fun categoria(res: Float) = when {
+    private fun categoria(res: Float) = when {
         res < 16 -> "Magreza Grave"
         res > 16 && res < 17 -> "Magreza moderada"
         res > 17 && res < 18.5 -> "Magreza leve"

@@ -1,8 +1,9 @@
-package com.tw.myteste
+package com.tw.myteste.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tw.myteste.R
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -17,7 +18,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         btn_crono.setOnClickListener {
-            val i = Intent(this, MainActivity::class.java)
+            val i = Intent(this, ChronometerActivity::class.java)
             startActivity(i)
         }
     }

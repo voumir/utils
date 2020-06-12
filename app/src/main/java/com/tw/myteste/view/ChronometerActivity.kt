@@ -1,20 +1,20 @@
-package com.tw.myteste
+package com.tw.myteste.view
 
 import android.os.Bundle
 import android.os.SystemClock
-import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.tw.myteste.R
+import kotlinx.android.synthetic.main.activity_chrono.*
 
-// TODO Renomear para ChronomeActivity
-class MainActivity : AppCompatActivity() {
+
+class ChronometerActivity : AppCompatActivity() {
 
     private var pauseOffSet: Long = 0
     private var isPlaying: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_chrono)
 
         toggleButton.text = null
         toggleButton.textOff = null
